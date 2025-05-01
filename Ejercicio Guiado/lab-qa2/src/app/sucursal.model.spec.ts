@@ -1,7 +1,8 @@
 import { Sucursal } from './sucursal.model';
-import { mock, when, instance } from 'ts-mockito'; 
+import { mock, when, instance, verify } from 'ts-mockito'; 
 import { Client } from './client.model'; 
 import { Count } from './count'; 
+
 
 
 /* 
@@ -72,6 +73,3 @@ describe('Sucursal', () => {
     }); 
 
 }); 
-
-
-

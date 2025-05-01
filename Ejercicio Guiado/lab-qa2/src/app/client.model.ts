@@ -109,11 +109,13 @@ export class Client {
     for (var i=0; i<this.getCantAccounts(); i++) {
         var account = this.cuentas[i];
         if(accountNumber == account.getNumCuenta()){
+          this.cuentas[i].liquidar();
             this.cuentas.splice(i,1);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
   }
 }
+
 

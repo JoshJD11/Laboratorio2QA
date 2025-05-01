@@ -1,5 +1,4 @@
 export interface Count {
-    new () : Count;
     getNumCuenta():number;
     setNumCuenta(numeroCuenta:number):void;
     getCantidadDinero():number;
